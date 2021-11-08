@@ -7,7 +7,7 @@
   --font-size-f-d: 22px;
   --font-family-names: "Opens Sans";
   --font-size-names: 20px;
-  --font-family-parrafos: 
+  --font-family-parrafos: "Opens Sans"
   --font-size-parrafos: 16px
 }
 
@@ -18,8 +18,6 @@
   --font-opens-sans-color: #54585a;
   --font-opens-sans-color-CL: #54585a;
   --font-rubik-medium-color-: #ffffff;
-
-  --
 }
 
 * {
@@ -71,6 +69,30 @@ a {
   color: white;
   text-decoration: none;
 }
+
+/*PARTE DEL LEMA*/
+
+.slogan {
+  background-image: url(https://image.freepik.com/vector-gratis/ilustracion-colorida-mujer-programadora-haciendo-su-trabajo_23-2148270747.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 320px;
+  height: 326px;  
+  display: flex;
+  align-items: flex-end;
+}
+
+.slogan-text {
+  background-color: white;
+  font-weight: bold;
+  font-family: "OpenSans";
+  font-size: 18px;
+  width: 260px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 15px;
+}
+
 
 /* PARTE DE EQUIPO */
 
