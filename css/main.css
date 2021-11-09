@@ -134,17 +134,40 @@ a {
 
 
 
-
-
 /* FOOTER */
+
+.footer {
+  background-color:#fff;
+  width: 320px;
+  height: 20px;
+  margin-left: 74;
+  margin-right: 74;
+  padding-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "OpenSans";
+  font-size: 14px;  
+}
 
 .footer-nav{
     width: 320px;
     height: 70px;
-    background-color: grey;
+    background-color: #fff;
 }
 
 .footer-list{
     list-style-type: none;
+    padding-top: 20px;
+    background-color:#fff;
+    font-family: "OpenSans";
+    font-size: 14px;
+    color: #54585a;
+
+}
+.footer-list a {
+  color: #54585a;
 }
 
