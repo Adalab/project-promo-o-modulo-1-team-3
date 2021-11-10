@@ -13,22 +13,22 @@
 
 :root {
   --team-name-text: #ffff;
-  --team-background: #099D8D;
-  --menu-text: #14D9C4;
-  --menu-background: #FFFFFF;
+  --team-background: #099d8d;
+  --menu-text: #14d9c4;
+  --menu-background: #ffffff;
   --solgan-text: #000000;
   --solgan-background: white;
-  --strengths-title: aqua;
-  --strengths-descriptions:#54585A;
+  --strengths-title: #099d8d;
+  --strengths-descriptions: #54585a;
   --strengths-background: white;
-  --about-us-names-text:#000000;
-  --about-us-background:white;
-  --about-us-descriptions:#54585A;
-  --about-us-icons-networks: #14D9C4;
-  --abot-us-boxes-text: #B8B8B9;
-  --about-us-border-box: #B8B8B9;
-  --footer-copy-right-test: #B8B8B9;
-  --footer-list-text: #54585A;
+  --about-us-names-text: #000000;
+  --about-us-background: white;
+  --about-us-descriptions: #54585a;
+  --about-us-icons-networks: #14d9c4;
+  --abot-us-boxes-text: #b8b8b9;
+  --about-us-border-box: #b8b8b9;
+  --footer-copy-right-test: #b8b8b9;
+  --footer-list-text: #54585a;
   --footer-background: white;
 }
 
@@ -40,7 +40,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: blue;
+  background-color: #099d8d;
   width: 320px;
   height: 60px;
   opacity: 0.95;
@@ -53,10 +53,11 @@ h1 {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.88;
+  color: white;
 }
 
 nav {
-  background-color: blue;
+  background-color: #099d8d;
   display: flex;
   width: 100%;
   height: 500px;
@@ -68,7 +69,7 @@ nav {
 .menu {
   display: flex;
   align-items: center;
-  background-color: aqua;
+  background-color: #14d9c4;
   width: 320px;
   height: 40px;
   list-style-type: none;
@@ -115,20 +116,29 @@ a {
   align-items: center;
   text-align: center;
   width: 320px;
-  height: 504px;
-  padding: 30px 15px;
   background-color: #fff;
-  color:var(--font-opens-sans-color);
+  color: #54585a;
   line-height: 24px;
 }
 
 .team-section-text {
   width: 290px;
-  height: 384px;
+  margin-bottom: 20px;
 }
 
 .team-section-title {
-  color: var(--menu-color);
+  color: #14d9c4;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.square {
+  width: 29.9px;
+  height: 30px;
+  background-color: #fff;
+  margin-left: 150px;
+  margin-bottom: -15px;
+  transform: rotate(45deg);
 }
 
 .s-w-section {
@@ -141,7 +151,7 @@ a {
   width: 320px;
   height: 579px;
   padding: 30px 15px 45px;
-  background-color: #b8b8b9;
+  background-color: #b8b8b954;
   color: var(--font-opens-sans-color);
   line-height: 24px;
 }
@@ -152,11 +162,13 @@ a {
 }
 
 .s-w-section-title {
-  color: var(--head-color);
+  color: var(--strengths-title);
+  margin-bottom: 15px;
+}
 
-  /* QUIÉNES SOMOS */
+/* QUIÉNES SOMOS */
 
-  .about-us {
+.about {
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
@@ -165,13 +177,12 @@ a {
   text-align: center;
   width: 320px;
   padding: 30px 15px;
-  background-color: var(--about-us-background);  
-  color: var(--about-us-descriptions)
+  background-color: var(--about-us-background);
+  color: var(--about-us-descriptions);
   line-height: 24px;
 }
 
-
- .names {
+.names {
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -185,7 +196,8 @@ a {
 }
 
 .about-us-desc {
-color: var(--about-us-descriptions);
+  color: var(--about-us-descriptions);
+}
 
 .social-networks {
   display: inline;
@@ -193,17 +205,12 @@ color: var(--about-us-descriptions);
   text-decoration: none;
 }
 
-   
-
-
-
-
 /* FOOTER */
 
 .footer {
   background-color: #fff;
   width: 320px;
-  height:20px;
+  height: 20px;
   margin-left: 74px;
   margin-right: 74px;
   padding-top: 35px;
@@ -233,8 +240,3 @@ color: var(--about-us-descriptions);
 .footer-list a {
   color: #54585a;
 }
-
-
-
-
-
