@@ -7,22 +7,33 @@
   --font-size-f-d: 22px;
   --font-family-names: "Opens Sans";
   --font-size-names: 20px;
-  --font-family-parrafos: "Opens Sans"
-  --font-size-parrafos: 16px
+  --font-family-parrafos: "Opens Sans";
+  --font-size-parrafos: 16px;
 }
 
 :root {
-  --background-color: #ffff; 
-  --head-color: #099d8d;
-  --menu-color: #14d9c4;
-  --font-opens-sans-color: #54585a;
-  --font-opens-sans-color-CL: #54585a;
-  --font-rubik-medium-color-: #ffffff;
-  --font-rubik-medium-CL-color-: #099d8d;
+  --team-name-text: #ffff;
+  --team-background: #099D8D;
+  --menu-text: #14D9C4;
+  --menu-background: #FFFFFF;
+  --solgan-text: #000000;
+  --solgan-background: white;
+  --strengths-title: aqua;
+  --strengths-descriptions:#54585A;
+  --strengths-background: white;
+  --about-us-names-text:#000000;
+  --about-us-background:white;
+  --about-us-descriptions:#54585A;
+  --about-us-icons-networks: #14D9C4;
+  --abot-us-boxes-text: #B8B8B9;
+  --about-us-border-box: #B8B8B9;
+  --footer-copy-right-test: #B8B8B9;
+  --footer-list-text: #54585A;
+  --footer-background: white;
 }
 
 * {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 header {
@@ -78,7 +89,7 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   width: 320px;
-  height: 326px;  
+  height: 326px;
   display: flex;
   align-items: flex-end;
 }
@@ -94,10 +105,9 @@ a {
   padding: 15px;
 }
 
+/* EQUIPO + FORTALEZAS Y DEBILIDADES */
 
-/* PARTE DE EQUIPO */
-
-#team-section {
+.team-section {
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
@@ -105,17 +115,48 @@ a {
   align-items: center;
   text-align: center;
   width: 320px;
+  height: 504px;
   padding: 30px 15px;
   background-color: #fff;
-  color: #54585a;
+  color:var(--font-opens-sans-color);
   line-height: 24px;
 }
 
-.section-title-team {
-  color: #14d9c4;
+.team-section-text {
+  width: 290px;
+  height: 384px;
 }
 
-.strengths-section {
+.team-section-title {
+  color: var(--menu-color);
+}
+
+.s-w-section {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 320px;
+  height: 579px;
+  padding: 30px 15px 45px;
+  background-color: #b8b8b9;
+  color: var(--font-opens-sans-color);
+  line-height: 24px;
+}
+
+.s-w-section-text {
+  width: 290px;
+  height: 192px;
+}
+
+.s-w-section-title {
+  color: var(--head-color);
+
+  /* QUIÉNES SOMOS */
+
+  .about-us {
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
@@ -124,25 +165,47 @@ a {
   text-align: center;
   width: 320px;
   padding: 30px 15px;
-  background-color: #b8b8b9;
-  color: #54585a;
+  background-color: var(--about-us-background);  
+  color: var(--about-us-descriptions)
   line-height: 24px;
 }
 
-.section-title f-d {
-  color: #099d8d;
+
+ .names {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 320px;
+  padding: 30px 15px;
+  background-color: white;
+  color: var(--about-us-names-text);
+  line-height: 24px;
 }
+
+.about-us-desc {
+color: var(--about-us-descriptions);
+
+.social-networks {
+  display: inline;
+  background-color: var(--about-us-background);
+  text-decoration: none;
+}
+
+   
+
 
 
 
 /* FOOTER */
 
 .footer {
-  background-color:#fff;
+  background-color: #fff;
   width: 320px;
-  height: 20px;
-  margin-left: 74;
-  margin-right: 74;
+  height:20px;
+  margin-left: 74px;
+  margin-right: 74px;
   padding-top: 35px;
   display: flex;
   flex-wrap: wrap;
@@ -150,25 +213,28 @@ a {
   align-items: center;
   text-align: center;
   font-family: "OpenSans";
-  font-size: 14px;  
+  font-size: 14px;
 }
 
-.footer-nav{
-    width: 320px;
-    height: 70px;
-    background-color: #fff;
+.footer-nav {
+  width: 320px;
+  height: 70px;
+  background-color: #fff;
 }
 
-.footer-list{
-    list-style-type: none;
-    padding-top: 20px;
-    background-color:#fff;
-    font-family: "OpenSans";
-    font-size: 14px;
-    color: #54585a;
-
+.footer-list {
+  list-style-type: none;
+  padding-top: 20px;
+  background-color: #fff;
+  font-family: "OpenSans";
+  font-size: 14px;
+  color: #54585a;
 }
 .footer-list a {
   color: #54585a;
 }
+
+
+
+
 
