@@ -62,6 +62,7 @@ header {
   line-height: 1.88;
   font-family: var(--font-family-menu);
   color: var(--team-name-text);
+  margin-top: 10px;
 }
 
 /* MENÚ PPAL */
@@ -75,6 +76,7 @@ header {
   list-style-type: none;
   justify-content: space-evenly;
   color: var(--team-name-text);
+  margin-top: 15px;
 }
 
 .menu-text {
@@ -196,6 +198,7 @@ header {
 
 .social {
   display: flex;
+  justify-content: column;
   align-items: center;
   flex-wrap: wrap;
  
@@ -237,9 +240,7 @@ header {
 .footer {
   background-color: #fff;
   width: 320px;
-  height: 20px;
-  margin-left: 74px;
-  margin-right: 74px;
+  height: 250px;
   padding-top: 35px;
   display: flex;
   flex-wrap: wrap;
@@ -256,14 +257,30 @@ header {
   background-color: #fff;
 }
 
+.footer-copy {
+  color: var(--abot-us-boxes-text)
+}
+
 .footer-list {
   list-style-type: none;
   padding-top: 20px;
-  background-color: #fff;
+  background-color: var(--footer-background);
   font-family: "OpenSans";
-  font-size: 14px;
-  color: #54585a;
+  font-size: 16px;
+  color:var(--footer-list-text);
+
 }
 .footer-list a {
   color: #54585a;
 }
+
+.footer-logo {
+  width: 115px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+   
+}
+
+
+    
