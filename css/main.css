@@ -40,6 +40,13 @@
   font-family: "Rubik", sans-serif;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /*CABECERA*/
 
 header {
@@ -139,11 +146,10 @@ header {
   margin-top: 30px;
 }
 
-.square {
+#square {
   width: 29.9px;
   height: 30px;
   background-color: #fff;
-  margin-left: 365px;
   margin-bottom: -15px;
   transform: rotate(45deg);
 }
@@ -200,16 +206,23 @@ header {
   width: 180px;
 }
 
+/* REDES SOCIALES */
+
 .social {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-
-  width: 320px;
-  height: 40px;
   list-style-type: none;
   margin-top: 15px;
   margin-bottom: 45px;
+}
+
+.social-list {
+  list-style-type: none;
+  display: flex;
+}
+
+.social-links {
+  margin: 20px;
 }
 
 .fa-twitter {
@@ -218,10 +231,18 @@ header {
   color: var(--about-us-icons-networks);
 }
 
+.fa-twitter:hover {
+  color: var(--team-background);
+}
+
 .fa-envelope {
   height: 30px;
   background-color: var(--about-us-background);
   color: var(--about-us-icons-networks);
+}
+
+.fa-envelope:hover {
+  color: var(--team-background);
 }
 
 .fa-linkedin-in {
@@ -230,10 +251,18 @@ header {
   color: var(--about-us-icons-networks);
 }
 
+.fa-linkedin-in:hover {
+  color: var(--team-background);
+}
+
 .fa-github-alt {
   height: 30px;
   background-color: var(--about-us-background);
   color: var(--about-us-icons-networks);
+}
+
+.fa-github-alt:hover {
+  color: var(--team-background);
 }
 
 /* FOOTER */
