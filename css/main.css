@@ -4,7 +4,7 @@
   --font-family-menu: "Rubik";
   --font-size-menu: 15px;
   --font-family-s-t: "Rubik";
-  --font-size-s-t: 24px;pull
+  --font-size-s-t: 24px;
   --font-family-f-d: "Rubik";
   --font-size-f-d: 22px;
   --font-family-names: "Opens Sans";
@@ -47,7 +47,7 @@ header {
   flex-direction: column;
   align-items: center;
   background-color: var(--team-background);
-  width: 320px;
+  width: 100%;
   height: 60px;
   opacity: 0.95;
   margin-bottom: 20px;
@@ -65,13 +65,17 @@ header {
   margin-top: 10px;
 }
 
+.nav-menu {
+  width: 100%;
+}
+
 /* MENÚ PPAL */
 
 .menu {
   display: flex;
   align-items: center;
   background-color: #14d9c4;
-  width: 320px;
+  width: 100%;
   height: 40px;
   list-style-type: none;
   justify-content: space-evenly;
@@ -91,18 +95,22 @@ header {
   background-image: url(https://image.freepik.com/vector-gratis/ilustracion-colorida-mujer-programadora-haciendo-su-trabajo_23-2148270747.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  width: 320px;
+  width: 100%;
   height: 326px;
   display: flex;
   align-items: flex-end;
+  justify-content: center;
 }
 
 .slogan-text {
+  display: flex;
+  position: relative;
+  justify-content: center;
   background-color: white;
   font-weight: bold;
   font-family: "OpenSans";
   font-size: 18px;
-  width: 260px;
+  width: 50%;
   margin-left: 15px;
   margin-right: 15px;
   padding: 15px;
@@ -113,18 +121,17 @@ header {
 .team-section {
   box-sizing: border-box;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 320px;
+  width: 100%;
   background-color: #fff;
   color: #54585a;
   line-height: 24px;
 }
 
 .team-section-text {
-  width: 290px;
   margin-bottom: 20px;
 }
 
@@ -138,7 +145,7 @@ header {
   width: 29.9px;
   height: 30px;
   background-color: #fff;
-  margin-left: 150px;
+  margin-left: 365px;
   margin-bottom: -15px;
   transform: rotate(45deg);
 }
@@ -150,7 +157,7 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 320px;
+  width: 100%;
   height: 579px;
   padding: 30px 15px 45px;
   background-color: #b8b8b954;
@@ -159,7 +166,6 @@ header {
 }
 
 .s-w-section-text {
-  width: 290px;
   height: 192px;
 }
 
@@ -201,15 +207,13 @@ header {
   justify-content: column;
   align-items: center;
   flex-wrap: wrap;
- 
+
   width: 320px;
   height: 40px;
   list-style-type: none;
   margin-top: 15px;
   margin-bottom: 45px;
 }
-
-
 
 .fa-twitter {
   height: 30px;
@@ -229,7 +233,7 @@ header {
   color: var(--about-us-icons-networks);
 }
 
-.fa-github-alt{
+.fa-github-alt {
   height: 30px;
   background-color: var(--about-us-background);
   color: var(--about-us-icons-networks);
@@ -239,8 +243,8 @@ header {
 
 .footer {
   background-color: #fff;
-  width: 320px;
-  height: 250px;
+  width: 100%;
+  height: 20px;
   padding-top: 35px;
   display: flex;
   flex-wrap: wrap;
@@ -258,7 +262,7 @@ header {
 }
 
 .footer-copy {
-  color: var(--abot-us-boxes-text)
+  color: var(--abot-us-boxes-text);
 }
 
 .footer-list {
@@ -267,8 +271,7 @@ header {
   background-color: var(--footer-background);
   font-family: "OpenSans";
   font-size: 16px;
-  color:var(--footer-list-text);
-
+  color: var(--footer-list-text);
 }
 .footer-list a {
   color: #54585a;
@@ -279,8 +282,4 @@ header {
   height: 45px;
   display: flex;
   justify-content: center;
-   
 }
-
-
-    
