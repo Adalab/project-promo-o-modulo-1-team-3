@@ -54,6 +54,7 @@ h1 {
   font-weight: 500;
   line-height: 1.88;
   color: white;
+  padding-top: 10px;
 }
 
 nav {
@@ -63,6 +64,7 @@ nav {
   height: 500px;
   display: flex;
   justify-content: center;
+  margin-top: 15px;
 }
 
 /* NO TOCAR */
