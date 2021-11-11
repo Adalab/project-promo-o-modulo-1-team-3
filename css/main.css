@@ -1,3 +1,5 @@
+/*VARIABLES*/
+
 :root {
   --font-family-menu: "Rubik";
   --font-size-menu: 15px;
@@ -14,11 +16,13 @@
 :root {
   --team-name-text: #ffff;
   --team-background: #099d8d;
-  --menu-text: #14d9c4;
+  --menu-text: #ffff;
   --menu-background: #ffffff;
   --solgan-text: #000000;
   --solgan-background: white;
-  --strengths-title: #099d8d;
+  --team-text: #14d9c4;
+  --team-description: #54585a;
+  --strengths-title: #14d9c4;
   --strengths-descriptions: #54585a;
   --strengths-background: white;
   --about-us-names-text: #000000;
@@ -36,36 +40,32 @@
   font-family: "Rubik", sans-serif;
 }
 
+/*CABECERA*/
+
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #099d8d;
+  background-color: var(--team-background);
   width: 320px;
   height: 60px;
   opacity: 0.95;
   margin-bottom: 20px;
+  color: var();
 }
 
-h1 {
+.team-name {
   width: 160px;
   height: 30px;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.88;
-  color: white;
+  font-family: var(--font-family-menu);
+  color: var(--team-name-text);
 }
 
-nav {
-  background-color: #099d8d;
-  display: flex;
-  width: 100%;
-  height: 500px;
-  display: flex;
-  justify-content: center;
-}
+/* MENÚ PPAL */
 
-/* NO TOCAR */
 .menu {
   display: flex;
   align-items: center;
@@ -74,13 +74,13 @@ nav {
   height: 40px;
   list-style-type: none;
   justify-content: space-evenly;
-  color: white;
+  color: var(--team-name-text);
 }
-/* NO TOCAR */
 
-a {
-  color: white;
+.menu-text {
+  color: var(--menu-text);
   text-decoration: none;
+  font-family: var(--font-family-menu);
 }
 
 /*PARTE DEL LEMA*/
@@ -152,7 +152,7 @@ a {
   height: 579px;
   padding: 30px 15px 45px;
   background-color: #b8b8b954;
-  color: var(--font-opens-sans-color);
+  color: var(--strengths-descriptions);
   line-height: 24px;
 }
 
@@ -168,19 +168,7 @@ a {
 
 /* QUIÉNES SOMOS */
 
-.about {
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 320px;
-  padding: 30px 15px;
-  background-color: var(--about-us-background);
-  color: var(--about-us-descriptions);
-  line-height: 24px;
-}
+/* Se usan las propiedades del contenedor TEAM-SECTION */
 
 .names {
   box-sizing: border-box;
@@ -193,16 +181,63 @@ a {
   background-color: white;
   color: var(--about-us-names-text);
   line-height: 24px;
+  font-family: var(--font-family-names);
+  font-size: 20px;
 }
 
 .about-us-desc {
   color: var(--about-us-descriptions);
 }
+.images {
+  margin-top: 30px;
+  height: 180px;
+  width: 180px;
+}
 
-.social-networks {
-  display: inline;
-  background-color: var(--about-us-background);
+.social {
+  display: flex;
+  align-items: center;
+  background-color: #14d9c4;
+  width: 320px;
+  height: 40px;
+  list-style-type: none;
+  margin-top: 15px;
+  margin-bottom: 45px;
+}
+
+.social .ul .li {
+  color: aqua;
   text-decoration: none;
+}
+
+.icon {
+  color: var(--about-us-icons-networks);
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.fa-twitter {
+  height: 30px;
+  background-color: var(--about-us-background);
+  color: var(--about-us-icons-networks);
+}
+
+.fas fa-envelope {
+  height: 30px;
+  background-color: var(--about-us-background);
+  color: var(--about-us-icons-networks);
+}
+
+.fa-linkedin-in {
+  height: 30px;
+  background-color: var(--about-us-background);
+  color: var(--about-us-icons-networks);
+}
+
+.fa-envelope {
+  height: 30px;
+  background-color: var(--about-us-background);
+  color: var(--about-us-icons-networks);
 }
 
 /* FOOTER */

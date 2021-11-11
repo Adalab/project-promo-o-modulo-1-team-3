@@ -7,19 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./icons.sgv">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- ¿INSERTAR LINK PARA ICONOS? -->
+   
     <title>Home</title>
 </head>
 
 <body>
     <header>
-        <h1>Nombre del grupo</h1>
-
+        <h1 class="team-name">NOMBRE DEL GRUPO</h1>
         <nav>
             <ul class="menu">
-                <li class="team"><a href="./index.html#team-section">EQUIPO </a></li>
-                <li class="us"> <a href="./index.html#about-us"></a> QUIÉNES SOMOS</li>
-                <li class="contact"><a href="./contact.html">CONTACTO</a></li>
+                <li><a class="menu-text" href="./index.html#team-section">EQUIPO</a></li>
+                <li><a class="menu-text" href="./index.html#about-us">QUIÉNES SOMOS</a> </li>
+                <li><a class="menu-text" href="./contact.html">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
@@ -32,7 +35,7 @@
             <p class="slogan-text"> Lorem ipsum, dolor sit amet consectetur adipiscing elit.</p>
         </section>
 
-    <!-- 2º rectángulo, team -->
+        <!-- 2º rectángulo, team -->
         <section class="team-section">
             <h2 class="team-section-title">EQUIPO</h2>
             <article class="team-section-text">
@@ -56,75 +59,142 @@
             <article>
                 <h2 class="s-w-section-title">Fortalezas</h2>
 
-                <p class="s-w-section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quod optio saepe. Dolore, harum vero
+                <p class="s-w-section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quod optio
+                    saepe. Dolore, harum vero
                     hic culpa deleniti corrupti rem nemo repellendus aliquam. Perspiciatis ullam perferendis nobis
                     maiores, fuga natus.</p>
 
                 <h2 class="s-w-section-title">Debilidades </h2>
-                <p class="s-w-section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit repellendus ducimus, iusto rerum sunt
+                <p class="s-w-section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit repellendus
+                    ducimus, iusto rerum sunt
                     dolore? Illum voluptates, praesentium quasi, a neque consequatur repellendus repellat omnis,
                     deleniti tenetur nam quia distinctio.</p>
-             </article>
+            </article>
         </section>
 
-      
 
-            <section class="about-us">
+        <!-- 4º QUIÉNES SOMOS -->
+
+        <section class="team-section">
+
+            <h2 class="team-section-title">QUIÉNES SOMOS</h2>
+
+            <!-- MIREIA -->
+
+            <article>
+                <img class="images" src="INSERTAR FOTO">
+                <h3 class="names">Mireia</h3>
+                <p class="about-us-desc">Nacida en Madrid, estudió Integración Social y Educación Social, trabajó poco
+                    de ello por lo que decidió cambiar de tercio y formarse en el ámbito de la programación web.
+                    Actualmente está realizando un bootcamp maravilloso y nada estresante en Adalab - La generación O -
+                    La conoceréis de series y películas como... a no, ese es Troy McClure,
+                    Lo dicho, futura programadora frontend.</p>
+            </article>
+
+            <!-- redes sociales de Mireia -->
             
-                <h2 class="section-title-team s-t">QUIÉNES SOMOS</h2>
-    
-                <article>
-                    <img src="INSERTAR FOTO" height="180px" width="180px">
-                    <h3 class="names">Mireia</h3>
-                    <p class="about-us-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis ab possimus accusantium
-                        necessitatibus laudantium fugit quam, temporibus odio ea voluptatem asperiores facere est ex nam
-                        enim id dolores numquam deleniti.</p>
-    
-                    <!-- redes sociales de mireia -->
-    
-                    <nav class="about">
-                        <div class="social-networks">
-                            <div><a href="twitter"></a></div>
-                            <div><a href="linkedin"></a></div>
-                            <div><a href="github"></a></div>
-                            <div><a href="email"></a></div>
-                        </div>
-                    </nav>
-    
-                </article>
-    
-                <article>
-                    <img src="INSERTAR FOTO" height="180px" width="180px">
-                    <h3 class="names">Silvia</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est asperiores culpa cupiditate magni, ea
-                        adipisci maxime illo possimus nisi omnis autem molestiae! Quae temporibus velit aliquam maxime
-                        numquam? Ut, consequatur.</p>
-                </article>
-    
-                <article>
-                    <img src="INSERTAR FOTO" height="180px" width="180px">
-                    <h3 class="names">Marta</h3>
-                    <p class="about-us-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore est ab, alias libero, nam, ullam
-                        perferendis quaerat debitis hic cum voluptate! Vel ullam, incidunt in sit ducimus soluta similique!
-                        Deserunt?</p>
-                </article>
-    
-                <article>
-                    <img src="INSERTAR FOTO" height="180px" width="180px">
-                    <h3 class="names">Elena</h3>
-                    <p class="about-us-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat hic quam exercitationem minima
-                        expedita obcaecati inventore soluta totam cumque eaque sint ea voluptate sed, doloribus veritatis,
-                        quasi laboriosam ad animi?</p>
-                </article>
-    
-                <article>
-                    <img src="INSERTAR FOTO" height="180px" width="180px">
-                    <h3 class="names">Alicia</h3>
-                    <p class="about-us-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo illum, quas a maxime aperiam eos
-                        odit asperiores incidunt, ut non pariatur. Molestias est quas rerum quidem a odio veniam quis?</p>
-                </article>
-                
-            </section>
+                    <div class="social">
+                        <ul>
+                            <li><a class="menu-text" href="http://www."><i class="icon"></i></a></li>
+                            <li><a class="menu-text" href="http://www."><i class="icon"></i></a></li>
+                            <li><a class="menu-text" href="http://www."><i class="icon"></i></a></li>
+                            <li><a class="menu-text" href="http://www."><i class="icon"></i></a></li>
+                        </ul>
+                    </div>
+            
+
+
+            <!-- SILVIA-->
+            <article>
+                <img class="images" src="INSERTAR FOTO">
+                <h3 class="names">Silvia</h3>
+                <p>Nacida en Madrid, estudió Antropología Social y Cultural para luego especializarse en Estudios de
+                    Género y Cooperación al desarrollo. Durante su trabajo como investigadora en un proyecto de I+D+i,
+                    conoció el mundo de la programación. Actualmente forma parte de la generación O de Adalab para
+                    llegar a ser una estupenda full stack developer.</p>
+            </article>
+
+            <!-- redes sociales de Silvia -->
+            <article>
+                <nav>
+                    <div class="social">
+                        <ul>
+                            <li><a class="menu-text" href="http://www."><i class="icon"></i></a></li>
+                            <li><a class="menu-text" href="http://www."><i class="icon"></i></a></li>
+                            <li><a class="menu-text" href="http://www."><i class="icon"></i></a></li>
+                            <li><a class="menu-text" href="http://www."><i class="icon"></i></a></li>
+                        </ul>
+                </nav>
+            </article>
+
+            <!-- MARTA-->
+            <article>
+                <img class="images" src="INSERTAR FOTO">
+                <h3 class="names">Marta</h3>
+                <p class="about-us-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore est ab, alias
+                    libero, nam, ullam
+                    perferendis quaerat debitis hic cum voluptate! Vel ullam, incidunt in sit ducimus soluta similique!
+                    Deserunt?</p>
+            </article>
+
+            <!-- redes sociales de Marta -->
+            <article>
+                <nav>
+                    <div class="social">
+                        <ul>
+                            <li><a class="menu-text" href="http://www."><i class="icon"></i></a></li>
+                            <li><a class="menu-text" href="http://www."><i class="icon"></i></a></li>
+                            <li><a class="menu-text" href="http://www."><i class="icon"></i></a></li>
+                            <li><a class="menu-text" href="http://www."><i class="icon"></i></a></li>
+                        </ul>
+                </nav>
+            </article>
+
+            <!-- ELENA -->
+            <article>
+                <img class="images" src="INSERTAR FOTO">
+                <h3 class="names">Elena</h3>
+                <p class="about-us-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat hic quam
+                    exercitationem minima
+                    expedita obcaecati inventore soluta totam cumque eaque sint ea voluptate sed, doloribus veritatis,
+                    quasi laboriosam ad animi?</p>
+            </article>
+
+            <!-- redes sociales de Elena -->
+            <article>
+                <nav>
+                    <div class="social">
+                        <ul>
+                            <li><a class="menu-text" href="http://www."><i class="icon"></i></a></li>
+                            <li><a class="menu-text" href="http://www."><i class="icon"></i></a></li>
+                            <li><a class="menu-text" href="http://www."><i class="icon"></i></a></li>
+                            <li><a class="menu-text" href="http://www."><i class="icon"></i></a></li>
+                        </ul>
+                </nav>
+            </article>
+
+            <!-- ALICIA -->
+            <article>
+                <img class="images" src="INSERTAR FOTO">
+                <h3 class="names">Alicia</h3>
+                <p class="about-us-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo illum, quas
+                    a maxime aperiam eos
+                    odit asperiores incidunt, ut non pariatur. Molestias est quas rerum quidem a odio veniam quis?</p>
+            </article>
+
+            <!-- redes sociales de Alicia -->
+            <article>
+                <nav>
+                    <div class="social">
+                        <ul>
+                            <li><a class="menu-text" href="http://www."><i class="fab fa-twitter"></i></a></li>
+                            <li><a class="menu-text" href="http://www."><i class="fab fa-github-alt"></i></a></li>
+                            <li><a class="menu-text" href="http://www."><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a class="menu-text" href="http://www."><i class="fas fa-envelope"></i></a></li>
+                        </ul>
+                </nav>
+            </article>
+        </section>
 
     </main>
 
@@ -139,7 +209,7 @@
             <ul class="footer-list">
                 <li class="team"><a href="./index.html#team-section">Equipo </a></li>
                 <li class="us"><a href="./index.html#us-section"></a> Quiénes Somos</li>
-                
+
                 <!--VIENE POR EL SOCORRO DE-->
                 <li class="contact"><a href="./contact.html">Contacto</a></li>
             </ul>
