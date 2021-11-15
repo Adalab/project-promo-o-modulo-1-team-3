@@ -206,6 +206,8 @@ header {
   color: var(--about-us-descriptions);
 }
 .images {
+  border: rgba(117, 112, 112, 0.178) 5px solid;
+  border-radius: 5%;
   margin-top: 30px;
   height: 180px;
   width: 180px;
@@ -306,6 +308,8 @@ header {
 }
 .footer-list a {
   color: #54585a;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .footer-logo {
