@@ -24,7 +24,7 @@
 
 :root {
   --team-name-text: #ffff;
-  --team-background: #099d8d;
+  --team-background: #099d8eb7;
   --menu-text: #ffff;
   --menu-background: #ffffff;
   --solgan-text: #000000;
@@ -53,7 +53,6 @@
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -63,7 +62,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--team-background);
+  background-color: #099d8ef5;
   width: 100%;
   height: 60px;
   opacity: 0.95;
@@ -79,6 +78,9 @@ header {
   line-height: 1.88;
   font-family: var(--font-family-menu);
   color: var(--team-name-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 10px;
 }
 
@@ -91,13 +93,13 @@ header {
 .menu {
   display: flex;
   align-items: center;
-  background-color: #14d9c4;
+  background-color: #14d9c5ea;
   width: 100%;
   height: 40px;
   list-style-type: none;
   justify-content: space-evenly;
   color: var(--team-name-text);
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .menu-text {
@@ -110,27 +112,38 @@ header {
 
 .slogan {
   background-image: url(https://image.freepik.com/vector-gratis/ilustracion-colorida-mujer-programadora-haciendo-su-trabajo_23-2148270747.jpg);
-  background-repeat: no-repeat;
   background-position: center;
+  position: relative;
+  bottom: 50px;
+  z-index: -1;
   width: 100%;
-  height: 326px;
+  height: 500px;
+}
+
+.hero {
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slogan-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  transform: translate(0, -115px);
+  background-color: rgba(255, 255, 255, 0.555);
+  box-sizing: border-box;
+  width: 70%;
+  height: 15vh;
 }
 
 .slogan-text {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  background-color: white;
   font-weight: bold;
-  font-family: "OpenSans";
+  font-family: "Open Sans";
   font-size: 18px;
-  width: 50%;
-  margin-left: 15px;
-  margin-right: 15px;
-  padding: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* EQUIPO + FORTALEZAS Y DEBILIDADES */
@@ -159,6 +172,9 @@ header {
   font-family: var(--font-family-menu);
   color: #14d9c4;
   margin-bottom: 15px;
+}
+
+.team-section-title.about-us {
   margin-top: 30px;
 }
 
@@ -300,6 +316,7 @@ header {
   text-align: center;
   font-family: "OpenSans";
   font-size: 14px;
+  z-index: 3;
 }
 
 .footer-nav {
