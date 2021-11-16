@@ -1,40 +1,212 @@
-<main class="page__main">
-  <h2>Este es el starter kit de Adalab</h2>
-  <p>Lo usamos para aprender:</p>
-  <ul class="main__list">
-    <li>Sass</li>
-    <li>HTML partials</li>
-    <li>Gulp</li>
-    <li>y muchas cosas más</li>
-  </ul>
-  <p>Si quieres saber cúales son las rutas correctas para:</p>
-  <ul class="main__list">
-    <li>
-      una <code class="code">&lt;img /&gt;</code> mira el fichero
-      <code class="code">./src/html/partials/header.html</code>.
-    </li>
-    <li>
-      y para un <code class="code">background-image</code> mira el fichero
-      <code class="code">./src/html/scss/layout/_page.scss</code>.
-    </li>
-  </ul>
-  <p>
-    Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-    <code class="code">./src/html/index.html</code> y
-    <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-    enlaces:
-  </p>
-  <ul class="main__list">
-    <li>
-      <include
-        src="./link.html"
-        aClass="link__adalab"
-        text="Adalab"
-        url="https://adalab.es"
-      ></include>
-    </li>
-    <li>
-      <include src="./link.html" text="Más info del starter kit" url="./more-info.html"></include>
-    </li>
-  </ul>
+<main>
+  <section class="slogan">
+      <!--La vida no es un problema a ser resuelto, es una realidad a experimentar-->
+      <p class="slogan-text"> El punto de salida hacia todo logro es el deseo.</p>
+  </section>
+
+  <!-- 2º rectángulo, team -->
+  <section class="team-section" id="team-section" >
+      <h2 class="team-section-title">EQUIPO</h2>
+      <article class="team-section-text">
+
+          <p>Arriesgarse es perder momentánemente el equilibrio. No arriesgarse es perderse a uno misma.</p>
+
+          <p>En (nombre del equipo), nos hemos "arriesgado" a empezar este curso desde cero, creyendo en nosotras
+              y en nuestra capacidad de aprendizaje. Estamos aquí para dar lo mejor de nosotras y conseguir
+              nuestro objetivo.
+              Apostamos por Adalab en este nuevo camino que vamos a recorrer juntas.</p>
+
+      </article>
+  </section>
+
+  <div id="square"></div>
+
+  <!-- 3º rectángulo, strengths and weaknesses -->
+
+  <section class="s-w-section">
+      <article>
+          <h2 class="s-w-section-title">Fortalezas</h2>
+
+          <p class="s-w-section-text">En (nombre) las fortalezas que más nos definen son la perseverancia,
+              constancia y la resiliencia. Somos capaces de superarnos y de generar respuestas o soluciones
+              alternativas a los problemas a los que nos enfrentamos.</p>
+
+          <h2 class="s-w-section-title">Debilidades </h2>
+          <p class="s-w-section-text">Las debilidades que tenemos en común son la impaciencia y el exceso
+              de perfeccionismo.Queremos que todo salga bien y perfectoy eso puede llevar a la frustación, ya que
+              no todo sale como nos gusta a todos.</p>
+      </article>
+  </section>
+
+
+  <!-- 4º QUIÉNES SOMOS -->
+
+  <section class="team-section" id="about-us">
+
+      <h2 class="team-section-title">QUIÉNES SOMOS</h2>
+
+      <!-- MIREIA -->
+     <section>
+      <article>
+          <img class="images" src="./assets/images/mireia.jpg" alt="Mireia">
+          <h3 class="names">Mireia</h3>
+          <p class="about-us-desc">Nacida en Madrid, estudió Integración Social y Educación Social, trabajó poco
+              de ello por lo que decidió cambiar de tercio y formarse en el ámbito de la programación web.
+              Actualmente está realizando un bootcamp maravilloso y nada estresante en Adalab - La generación O -
+              La conoceréis de series y películas como... a no, ese es Troy McClure,
+              Lo dicho, futura programadora frontend.</p>
+      </article>
+
+      <!-- redes sociales de Mireia -->
+      
+          
+              <div class="social">
+                  <ul class="social-list">
+                      <li>
+                          <a class="social-links" target="_blank" href="https://twitter.com/m_suefra"><i class="fab fa-twitter"></i></a>
+                      </li>
+                      <span class="text-style-1">·</span>
+                      <li>
+                          <a class="social-links" target="_blank" href="http://www.linkedin.com/in/mireia-s-0845661a4/"><i class="fab fa-linkedin-in"></i></a>
+                      </li>
+                      <span class="text-style-1">·</span>
+                      <li>
+                          <a class="social-links" target="_blank" href="https://github.com/mireiasuefra"><i class="fab fa-github-alt"></i></a>
+                      </li>
+                      <span class="text-style-1">·</span>
+
+                      <li>
+                          <a class="social-links" target="_blank" href="mailto:mireia.suefra@gmail.com?Subject=Hola%20Mireia"><i class="fas fa-envelope"></i></a>
+                      </li>
+                  </ul>
+              </div>
+          
+       </section>
+
+      <!-- SILVIA-->
+      <article>
+          <img class="images" src="./assets/images/silvia.jpg" alt="Silvia">
+          <h3 class="names">Silvia</h3>
+          <p>Nacida en Madrid, estudió Antropología Social y Cultural para luego especializarse en Estudios de
+              Género y Cooperación al desarrollo. Durante su trabajo como investigadora en un proyecto de I+D+i,
+              conoció el mundo de la programación. Actualmente forma parte de la generación O de Adalab para
+              llegar a ser una estupenda full stack developer.</p>
+      </article>
+
+      <!-- redes sociales de Silvia -->
+      <article>
+          <nav>
+              <div class="social">
+                  <ul class="social-list">
+                      <li>
+                          <a class="social-links" target="_blank"
+                              href="https://www.linkedin.com/in/silvia-d%C3%ADaz-molina-52213010b/"><i class="fab fa-linkedin-in"></i></a>
+                      </li>
+                      <span class="text-style-1">·</span>
+                      <li>
+                          <a class="social-links" target="_blank" href="https://github.com/SilviaDimol"><i class="fab fa-github-alt"></i></a>
+                      </li>
+
+                  </ul>
+              </div>
+          </nav>
+      </article>
+
+      <!-- MARTA-->
+      <article>
+          <img class="images" src="./assets/images/marta.jpg" alt="Marta">
+          <h3 class="names">Marta</h3>
+          <p class="about-us-desc">Manchega de nacimiento y madrileña de corazón, Marta ejerció toda su vida
+              profesional como técnica de proyecto.
+              Al no sentirse identificada con el entorno profesional, sumado a la inestabilidad laboral de su
+              sector,
+              decidió emprender esta nueva aventura como adalaber.</p>
+      </article>
+
+      <!-- redes sociales de Marta -->
+      <article>
+          <nav>
+              <div class="social">
+                  <ul class="social-list">
+                      <li>
+                          <a class="social-links" target="_blank" href="http://www.github.com/poncegui"><i class="fab fa-github-alt"></i></a>
+                      </li>
+                      <span class="text-style-1">·</span>
+                      <li>
+                          <a class="social-links" target="_blank" href="mailto:marta.ponceg@gmail.com?Subject=Hola%20Marta"><i class="fas fa-envelope"></i></a>
+                      </li>
+
+                  </ul>
+              </div>
+          </nav>
+      </article>
+
+      <!-- ELENA -->
+      <article>
+          <img class="images" src="./assets/images/elena.jpg" alt="Elena">
+          <h3 class="names">Elena</h3>
+          <p class="about-us-desc">Educadora Infantil de origen madrileño. Después de no encontrar trabajo en
+              Madrid, decidio irse a vivir a Alemania, donde vivió una experiencia única e irrepetbile. Hace un
+              año volvió a Madrid y decidió dar un giro de 180 grados a su vida. Se embarco en esta nueva aventura
+              de Adalab dispuesta a aprender desde 0 todo el mundo de la programación y lograr su objetivo: ser
+              una Full Stack Developer.</p>
+      </article>
+
+      <!-- redes sociales de Elena -->
+      <article>
+          <nav>
+              <div class="social">
+                  <ul class="social-list">
+                      <li>
+                          <a class="social-links" target="_blank" href="http://www.twitter.com/elenox92"><i class="fab fa-twitter"></i></a>
+                      </li>
+                      <span class="text-style-1">·</span>
+                      <li>
+                          <a class="social-links" target="_blank" href="http://www.linkedin.com/in/elena-fernández-sandoval-48425b145/"><i class="fab fa-linkedin-in"></i></a>
+                      </li>
+
+                      <span class="text-style-1">·</span>
+
+                      <li>
+                          <a class="social-links" target="_blank" href="http://www.github.com/ElenaFernandez"><i class="fab fa-github-alt"></i></a>
+                      </li>
+
+                  </ul>
+              </div>
+          </nav>
+      </article>
+
+      <!-- ALICIA -->
+      <article>
+          <img class="images" src="./assets/images/alicia.jpg" alt="Alicia">
+          <h3 class="names">Alicia</h3>
+          <p class="about-us-desc">Nació en Murcia y estudió Comunicación Audiovisual, allí tuvo su primer
+              contacto con el mundo del desarrollo web en una asignatura, lo que la llevó a interesarse y decidir
+              formarse más.
+              Actualmente forma parte de Adalab y su objetivo es aprender todo lo necesario para ser una gran
+              Front-End Developer.</p>
+      </article>
+
+      <!-- redes sociales de Alicia -->
+      <article>
+          <nav>
+              <div class="social">
+                  <ul class="social-list">
+                      <li>
+                          <a class="social-links" target="_blank" href="https://twitter.com/gallegali"><i class="fab fa-twitter"></i></a>
+                      </li>
+                      <span class="text-style-1">·</span>
+                      <li>
+                          <a class="social-links" target="_blank" href="https://www.linkedin.com/in/alicia-gallego-gonz%C3%A1lez-ba3154225/"><i class="fab fa-linkedin-in"></i></a>
+                      </li>
+                      <span class="text-style-1">·</span>
+                      <li>
+                          <a class="social-links" target="_blank" href="https://github.com/aliciaggz"><i class="fab fa-github-alt"></i></a>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+      </article>
+  </section>
+
 </main>
