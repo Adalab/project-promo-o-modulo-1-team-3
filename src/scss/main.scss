@@ -6,3 +6,333 @@
 @import 'layout/header';
 @import 'layout/footer';
 @import 'pages/index';
+
+/*VARIABLES*/
+
+:root {
+    --font-family-menu: "Rubik";
+    --font-size-menu: 15px;
+    --font-family-s-t: "Rubik";
+    --font-size-s-t: 24px;
+    --font-family-f-d: "Rubik";
+    --font-size-f-d: 22px;
+    --font-family-names: "Opens Sans";
+    --font-size-names: 20px;
+    --font-family-parrafos: "Opens Sans";
+    --font-size-parrafos: 16px;
+  }
+  
+  :root {
+    --team-name-text: #ffff;
+    --team-background: #099d8d;
+    --menu-text: #ffff;
+    --menu-background: #ffffff;
+    --solgan-text: #000000;
+    --solgan-background: white;
+    --team-text: #14d9c4;
+    --team-description: #54585a;
+    --strengths-title: #14d9c4;
+    --strengths-descriptions: #54585a;
+    --strengths-background: white;
+    --about-us-names-text: #000000;
+    --about-us-background: white;
+    --about-us-descriptions: #54585a;
+    --about-us-icons-networks: #14d9c4;
+    --abot-us-boxes-text: #b8b8b9;
+    --about-us-border-box: #b8b8b9;
+    --footer-copy-right-test: #b8b8b9;
+    --footer-list-text: #54585a;
+    --footer-background: white;
+  }
+  
+  * {
+    font-family: "Rubik", sans-serif;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*CABECERA*/
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--team-background);
+    width: 100%;
+    height: 60px;
+    opacity: 0.95;
+    margin-bottom: 20px;
+    color: var();
+  }
+  
+  .team-name {
+    width: 160px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.88;
+    font-family: var(--font-family-menu);
+    color: var(--team-name-text);
+    margin-top: 10px;
+  }
+  
+  .nav-menu {
+    width: 100%;
+  }
+  
+  /* MENÚ PPAL */
+  
+  .menu {
+    display: flex;
+    align-items: center;
+    background-color: #14d9c4;
+    width: 100%;
+    height: 40px;
+    list-style-type: none;
+    justify-content: space-evenly;
+    color: var(--team-name-text);
+    margin-top: 15px;
+  }
+  
+  .menu-text {
+    color: var(--menu-text);
+    text-decoration: none;
+    font-family: var(--font-family-menu);
+  }
+  
+  /*PARTE DEL LEMA*/
+  
+  .slogan {
+    background-image: url(https://image.freepik.com/vector-gratis/ilustracion-colorida-mujer-programadora-haciendo-su-trabajo_23-2148270747.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 326px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  
+  .slogan-text {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-color: white;
+    font-weight: bold;
+    font-family: "OpenSans";
+    font-size: 18px;
+    width: 50%;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 15px;
+  }
+  
+  /* EQUIPO + FORTALEZAS Y DEBILIDADES */
+  
+  .team-section {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: #fff;
+    color: #54585a;
+    line-height: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .team-section-text {
+    margin-bottom: 20px;
+  }
+  
+  .team-section-title {
+    color: #14d9c4;
+    margin-bottom: 15px;
+    margin-top: 30px;
+  }
+  
+  #square {
+    width: 29.9px;
+    height: 30px;
+    background-color: #fff;
+    margin-bottom: -15px;
+    transform: rotate(45deg);
+  }
+  
+  .s-w-section {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 50px 25px 5px;
+    background-color: #b8b8b954;
+    color: var(--strengths-descriptions);
+    line-height: 24px;
+  }
+  
+  .s-w-section-text {
+    height: 192px;
+  }
+  
+  .s-w-section-title {
+    color: var(--strengths-title);
+    margin-bottom: 15px;
+  }
+  
+  /* QUIÉNES SOMOS */
+  
+  /* Se usan las propiedades del contenedor TEAM-SECTION */
+  
+  .names {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 30px 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+    color: var(--about-us-names-text);
+    line-height: 24px;
+    font-family: var(--font-family-names);
+    font-size: 20px;
+  }
+  
+  .about-us-desc {
+    color: var(--about-us-descriptions);
+  }
+  .images {
+    border: rgba(117, 112, 112, 0.178) 5px solid;
+    border-radius: 5%;
+    margin-top: 30px;
+    height: 180px;
+    width: 180px;
+  }
+  
+  /* REDES SOCIALES */
+  
+  .social {
+    list-style-type: none;
+    margin-top: 15px;
+    margin-bottom: 45px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-list {
+    list-style-type: none;
+    display: flex;
+    
+  }
+  
+  .social-links {
+    margin: 20px;
+   
+  }
+  
+  .fa-twitter {
+    height: 30px;
+    background-color: var(--about-us-background);
+    color: var(--about-us-icons-networks);
+  }
+  
+  .fa-twitter:hover {
+    color: var(--team-background);
+  }
+  
+  .fa-envelope {
+    height: 30px;
+    background-color: var(--about-us-background);
+    color: var(--about-us-icons-networks);
+  }
+  
+  .fa-envelope:hover {
+    color: var(--team-background);
+  }
+  
+  .fa-linkedin-in {
+    height: 30px;
+    background-color: var(--about-us-background);
+    color: var(--about-us-icons-networks);
+  }
+  
+  .fa-linkedin-in:hover {
+    color: var(--team-background);
+  }
+  
+  .fa-github-alt {
+    height: 30px;
+    background-color: var(--about-us-background);
+    color: var(--about-us-icons-networks);
+  }
+  
+  .fa-github-alt:hover {
+    color: var(--team-background);
+  }
+  
+  /* FOOTER */
+  
+  .footer {
+    background-color: #fff;
+    width: 100%;
+    padding-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "OpenSans";
+    font-size: 14px;
+  }
+  
+  .footer-nav {
+    width: 320px;
+    height: 70px;
+    background-color: #fff;
+  }
+  
+  .footer-copy {
+    color: var(--abot-us-boxes-text);
+  }
+  
+  .footer-list {
+    list-style-type: none;
+    padding-top: 20px;
+    background-color: var(--footer-background);
+    font-family: "OpenSans";
+    font-size: 16px;
+    color: var(--footer-list-text);
+  }
+  .footer-list a {
+    color: #54585a;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .footer-logo {
+    width: 115px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-logo img {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    width: 115px;
+    height: 45px;
+  }
+  
