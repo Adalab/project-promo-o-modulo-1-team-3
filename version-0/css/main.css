@@ -216,21 +216,22 @@ header {
 /* REDES SOCIALES */
 
 .social {
-  display: flex;
-  justify-content: column;
-  align-items: center;
   list-style-type: none;
   margin-top: 15px;
   margin-bottom: 45px;
+  display: flex;
+  justify-content: center;
 }
 
 .social-list {
   list-style-type: none;
   display: flex;
+  
 }
 
 .social-links {
   margin: 20px;
+ 
 }
 
 .fa-twitter {
