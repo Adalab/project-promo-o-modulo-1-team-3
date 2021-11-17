@@ -1,108 +1,14 @@
-@import 'core/variables';
-@import 'core/reset';
+@import "core/variables";
+@import "core/reset";
 // @import 'components/code';
 // @import 'components/links';
-// @import 'layout/page';
-@import 'layout/header';
-@import 'layout/footer';
+@import "layout/page";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/slogan";
 // @import 'pages/index';
 
-/*VARIABLES*/
-
-:root {
-  --font-family-menu: "Rubik", "sans-serif";
-  --font-size-menu: 15px;
-  --font-family-s-t: "Rubik";
-  --font-size-s-t: 24px;
-  --font-family-f-d: "Rubik";
-  --font-size-f-d: 22px;
-  --font-family-names: "Open sans";
-  --font-size-names: 20px;
-  --font-family-parrafos: "Open sans";
-  --font-size-parrafos: 16px;
-}
-
-:root {
-  --team-name-text: #ffff;
-  --team-background: #099d8eb7;
-  --menu-text: #ffff;
-  --menu-background: #ffffff;
-  --solgan-text: #000000;
-  --solgan-background: white;
-  --team-text: #14d9c4;
-  --team-description: #54585a;
-  --strengths-title: #14d9c4;
-  --strengths-descriptions: #54585a;
-  --strengths-background: white;
-  --about-us-names-text: #000000;
-  --about-us-background: white;
-  --about-us-descriptions: #54585a;
-  --about-us-icons-networks: #14d9c4;
-  --abot-us-boxes-text: #b8b8b9;
-  --about-us-border-box: #b8b8b9;
-  --footer-copy-right-test: #b8b8b9;
-  --footer-list-text: #54585a;
-  --footer-background: white;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/*CABECERA*/
-
-
-/* MENÚ PPAL */
-
-/*PARTE DEL LEMA*/
-
-.slogan {
-  background-image: url(https://image.freepik.com/vector-gratis/ilustracion-colorida-mujer-programadora-haciendo-su-trabajo_23-2148270747.jpg);
-  background-position: center;
-  position: relative;
-  bottom: 50px;
-  z-index: -1;
-  width: 100%;
-  height: 500px;
-}
-
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.slogan-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  transform: translate(0, -115px);
-  background-color: rgba(255, 255, 255, 0.555);
-  box-sizing: border-box;
-  width: 70%;
-  height: 15vh;
-}
-
-.slogan-text {
-  font-weight: bold;
-  font-family: "Open Sans";
-  font-size: 18px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 /* EQUIPO + FORTALEZAS Y DEBILIDADES */
-
-
-
 
 .team-section-title.about-us {
   margin-top: 30px;
@@ -116,29 +22,9 @@ main {
   transform: rotate(45deg);
 }
 
-.s-w-section {
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  padding: 50px 25px 5px;
-  background-color: #b8b8b954;
-  color: var(--strengths-descriptions);
-  line-height: 24px;
-}
-
 .s-w-section-text {
   height: 192px;
   font-family: var(--font-family-parrafos);
-}
-
-.s-w-section-title {
-  font-family: var(--font-family-s-t);
-  color: var(--strengths-title);
-  margin-bottom: 15px;
 }
 
 /* QUIÉNES SOMOS */
@@ -235,67 +121,12 @@ main {
 
 /* FOOTER */
 
-.footer {
-  background-color: #fff;
-  width: 100%;
-  padding-top: 35px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-family: "OpenSans";
-  font-size: 14px;
-  z-index: 3;
-}
-
-.footer-nav {
-  width: 320px;
-  height: 70px;
-  background-color: #fff;
-}
-
-.footer-copy {
-  color: var(--abot-us-boxes-text);
-}
-
-.footer-list {
-  list-style-type: none;
-  padding-top: 20px;
-  background-color: var(--footer-background);
-  font-family: var(--font-family-names);
-  font-size: 16px;
-  color: var(--footer-list-text);
-}
-
-
-.footer-list a {
-  color: #54585a;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.footer-logo {
-  width: 115px;
-  height: 45px;
-  display: flex;
-  justify-content: center;
-}
-
-.footer-logo img {
-  margin-top: 20px;
-  padding-bottom: 20px;
-  width: 115px;
-  height: 45px;
-}
-
 /*medias queris*/
 @media all and (min-width: 768px) {
   .header {
     display: flex;
     flex-direction: row;
-    color: #099d8d; 
+    color: #099d8d;
     justify-content: space-between;
-    
   }
 }

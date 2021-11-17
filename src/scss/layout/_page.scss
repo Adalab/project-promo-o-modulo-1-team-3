@@ -1,3 +1,9 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .team__section {
   box-sizing: border-box;
   display: flex;
@@ -12,16 +18,39 @@
   padding-left: 20px;
   padding-right: 20px;
 
-    &--title{
-      font-family: var(--font-family-menu);
-      color: #14d9c4;
-      margin-bottom: 15px;
-    } 
-    
-    &--text{
-      margin-bottom: 20px;
-      font-family: var(--font-family-parrafos);
+  &--title {
+    font-family: $font-principal;
+    color: $color-secondary;
+    margin-bottom: 15px;
+  }
 
-    }
+  &--text {
+    margin-bottom: 20px;
+    font-family: $font-principal;
+  }
+}
 
+.s-w__section {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 50px 25px 5px;
+  background-color: rgba(180, 180, 180, 0.644);
+  color: $color-principal-text;
+  line-height: 24px;
+
+  &--title {
+    font-family: $font-principal;
+    color: $color-secondary;
+    margin-bottom: 15px;
+  }
+
+  &--text {
+    height: 192px;
+    font-family: $font-principal;
+  }
 }

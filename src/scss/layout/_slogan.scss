@@ -1,0 +1,37 @@
+/*PARTE DEL LEMA*/
+
+.slogan {
+  background-image: url(https://www.enter.co/wp-content/uploads/2021/03/5161938-768x432.jpg);
+  background-position: center;
+  position: relative;
+  bottom: 50px;
+  z-index: -1;
+  width: 100%;
+  height: 500px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slogan__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  transform: translate(0, -115px);
+  background-color: rgba(255, 255, 255, 0.555);
+  box-sizing: border-box;
+  width: 70%;
+  height: 15vh;
+}
+
+.slogan__container--text {
+  font-weight: bold;
+  font-family: $font-secondary;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
