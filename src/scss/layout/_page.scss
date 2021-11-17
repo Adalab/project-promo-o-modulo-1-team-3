@@ -1,7 +1,27 @@
-body {
-  padding: 2rem;
-  height: 100vh;
-  background-image: url('../images/bg-adalab.png');
-  background-color: $color-bg;
-  font-family: $font-main;
+.team__section {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  background-color: #fff;
+  color: #54585a;
+  line-height: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+    &--title{
+      font-family: var(--font-family-menu);
+      color: #14d9c4;
+      margin-bottom: 15px;
+    } 
+    
+    &--text{
+      margin-bottom: 20px;
+      font-family: var(--font-family-parrafos);
+
+    }
+
 }

@@ -1,10 +1,10 @@
-// @import 'core/variables';
-// @import 'core/reset';
+@import 'core/variables';
+@import 'core/reset';
 // @import 'components/code';
 // @import 'components/links';
 // @import 'layout/page';
-// @import 'layout/header';
-// @import 'layout/footer';
+@import 'layout/header';
+@import 'layout/footer';
 // @import 'pages/index';
 
 /*VARIABLES*/
@@ -58,55 +58,8 @@ main {
 
 /*CABECERA*/
 
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #099d8ef5;
-  width: 100%;
-  height: 60px;
-  opacity: 0.95;
-  margin-bottom: 20px;
-  color: var();
-}
-
-.team-name {
-  width: 160px;
-  height: 30px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.88;
-  font-family: var(--font-family-menu);
-  color: var(--team-name-text);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-}
-
-.nav-menu {
-  width: 100%;
-}
 
 /* MENÚ PPAL */
-
-.menu {
-  display: flex;
-  align-items: center;
-  background-color: #14d9c5ea;
-  width: 100%;
-  height: 40px;
-  list-style-type: none;
-  justify-content: space-evenly;
-  color: var(--team-name-text);
-  margin-top: 20px;
-}
-
-.menu-text {
-  color: var(--menu-text);
-  text-decoration: none;
-  font-family: var(--font-family-menu);
-}
 
 /*PARTE DEL LEMA*/
 
@@ -148,31 +101,8 @@ header {
 
 /* EQUIPO + FORTALEZAS Y DEBILIDADES */
 
-.team-section {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  background-color: #fff;
-  color: #54585a;
-  line-height: 24px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
 
-.team-section-text {
-  margin-bottom: 20px;
-  font-family: var(--font-family-parrafos);
-}
 
-.team-section-title {
-  font-family: var(--font-family-menu);
-  color: #14d9c4;
-  margin-bottom: 15px;
-}
 
 .team-section-title.about-us {
   margin-top: 30px;
@@ -337,6 +267,8 @@ header {
   font-size: 16px;
   color: var(--footer-list-text);
 }
+
+
 .footer-list a {
   color: #54585a;
   text-decoration: none;
@@ -357,9 +289,13 @@ header {
   height: 45px;
 }
 
+/*medias queris*/
 @media all and (min-width: 768px) {
   .header {
     display: flex;
     flex-direction: row;
+    color: #099d8d; 
+    justify-content: space-between;
+    
   }
 }
