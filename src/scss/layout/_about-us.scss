@@ -1,0 +1,97 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__images {
+    border: rgba(117, 112, 112, 0.178) 5px solid;
+    border-radius: 5%;
+    margin-top: 30px;
+    height: 180px;
+    width: 180px;
+  }
+
+  &__name {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 30px 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+    color: $color-principal;
+    line-height: 24px;
+    font-family: $font-principal;
+    font-size: 20px;
+  }
+
+  &__aboutus {
+    text-align: center;
+    font-family: $font-principal;
+    color: $color-secondary-text;
+    margin: 20px;
+  }
+}
+
+/* REDES SOCIALES */
+
+.social {
+  list-style-type: none;
+  margin-top: 15px;
+  margin-bottom: 45px;
+  display: flex;
+  justify-content: center;
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+
+    &--links {
+      margin: 20px;
+    }
+  }
+}
+
+.fa-twitter {
+  height: 30px;
+  background-color: var(--about-us-background);
+  color: var(--about-us-icons-networks);
+}
+
+.fa-twitter:hover {
+  color: var(--team-background);
+}
+
+.fa-envelope {
+  height: 30px;
+  background-color: var(--about-us-background);
+  color: var(--about-us-icons-networks);
+}
+
+.fa-envelope:hover {
+  color: var(--team-background);
+}
+
+.fa-linkedin-in {
+  height: 30px;
+  background-color: var(--about-us-background);
+  color: var(--about-us-icons-networks);
+}
+
+.fa-linkedin-in:hover {
+  color: var(--team-background);
+}
+
+.fa-github-alt {
+  height: 30px;
+  background-color: var(--about-us-background);
+  color: var(--about-us-icons-networks);
+}
+
+.fa-github-alt:hover {
+  color: var(--team-background);
+}

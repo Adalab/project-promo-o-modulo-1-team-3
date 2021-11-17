@@ -6,61 +6,13 @@
 @import "layout/header";
 @import "layout/footer";
 @import "layout/slogan";
-// @import 'pages/index';
+@import "layout/about-us";
 
 /* EQUIPO + FORTALEZAS Y DEBILIDADES */
 
 .team-section-title.about-us {
   margin-top: 30px;
 }
-
-#square {
-  width: 29.9px;
-  height: 30px;
-  background-color: #fff;
-  margin-bottom: -15px;
-  transform: rotate(45deg);
-}
-
-.s-w-section-text {
-  height: 192px;
-  font-family: var(--font-family-parrafos);
-}
-
-/* QUIÉNES SOMOS */
-
-/* Se usan las propiedades del contenedor TEAM-SECTION */
-
-.names {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  padding: 30px 25px;
-  margin-left: 20px;
-  margin-right: 20px;
-  background-color: white;
-  color: var(--about-us-names-text);
-  line-height: 24px;
-  font-family: var(--font-family-names);
-  font-size: 20px;
-}
-
-.about-us-desc {
-  font-family: var(--font-family-parrafos);
-  color: var(--about-us-descriptions);
-}
-.images {
-  border: rgba(117, 112, 112, 0.178) 5px solid;
-  border-radius: 5%;
-  margin-top: 30px;
-  height: 180px;
-  width: 180px;
-}
-
-/* REDES SOCIALES */
 
 .social {
   list-style-type: none;

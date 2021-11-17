@@ -22,6 +22,7 @@ main {
     font-family: $font-principal;
     color: $color-secondary;
     margin-bottom: 15px;
+    padding-top: 20px;
   }
 
   &--text {
@@ -53,4 +54,12 @@ main {
     height: 192px;
     font-family: $font-principal;
   }
+}
+
+#square {
+  width: 29.9px;
+  height: 30px;
+  background-color: #fff;
+  margin-bottom: -15px;
+  transform: rotate(45deg);
 }
