@@ -71,14 +71,123 @@
   color: var(--team-background);
 }
 
-/* FOOTER */
+/*medias queries*/
 
-/*medias queris*/
+/*UP TO 768px*/
+
+/*HEADER*/
+
 @media all and (min-width: 768px) {
   .header {
-    display: flex;
+    display: fixed;
     flex-direction: row;
-    color: #099d8d;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    background-color: #099d8d;
+
+    h1 {
+      margin: 0px;
+      display: flex;
+      align-items: center;
+      margin: 0px 0px 0px 45px;
+      line-height: 30px;
+    }
+  }
+
+  .menu__nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 0px;
+    line-height: 30px;
+    font-size: 15px;
+  }
+
+  .menu__nav--list {
     justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    position: relative;
+    margin-right: 45px;
+    width: 294px;
+    padding: 0px;
+    height: 60px;
+    background-color: #099d8d;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    border-top: 1px solid #b8b8b9;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 161px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .list {
+    justify-content: space-between;
+    align-items: flex-end;
+    position: absolute;
+    top: 24px;
+    right: 45px;
+    height: 90px;
+    width: 324px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .footer__logo {
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 65px;
+    left: 45px;
+    bottom: 31px;
+  }
+
+  .footer__copy {
+    position: absolute;
+    top: 30px;
+    left: 45px;
+    padding: 0;
+    margin: 0px;
+  }
+}
+
+/* UP TO 1200px */
+
+/*HEADER*/
+
+@media all and (min-width: 1200px) {
+  .header {
+    h1 {
+      margin: 0px 0px 0px 142px;
+    }
+  }
+
+  .menu__nav--list {
+    margin-right: 138px;
+  }
+
+  /* FOOTER */
+
+  .list {
+    position: absolute;
+    right: 138px;
+  }
+
+  .footer__logo {
+    position: absolute;
+    left: 138px;
+  }
+
+  .footer__copy {
+    position: absolute;
+    left: 138px;
   }
 }
