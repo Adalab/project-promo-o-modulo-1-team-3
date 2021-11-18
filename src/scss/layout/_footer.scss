@@ -1,95 +1,70 @@
 .footer {
   background-color: #fff;
-  width: 100%;
-  padding-top: 35px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   font-family: $font-secondary;
   font-size: 14px;
-  z-index: 3;
+  padding-top: 30px;
+  padding-bottom: 45px;
 
-  @media (min-width:768px){
-      border-top: 1px solid #b8b8b9;
-      display: flex;
-      justify-content: flex-start;
-      position: relative;
-      top: 0;
-      left: 0;
-      height: 161px;
-      margin: 0px;
-      padding: 0px;}
-
-  &__copy {
-    margin: 10px;
-    color: $color-quart-text;
-    align-items: center;
-  
-
-  @media (min-width:768px){
-    position: absolute;
-      top: 30px;
-      left: 45px;
-      padding: 0;
-      margin: 0px;
-    }
-
-    @media (min-width:1200px){
-      position: absolute;
-      right: 138px;
-    }
-
-  &__logo {
-    position: relative;
-    left: 10px;
-
-      @media (min-width:768px){
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: 65px;
-        left: 45px;
-        bottom: 31px;
-      }
-
-      @media (min-width:1200px){
-        position: absolute;
-        right: 138px;
-      }
-
-        & img {
-          width: 115px;
-          height: 45px;
-          margin-top: 15px;
-          margin-bottom: 20px;
-        }
-  } }
-}
-
-.list {
-  padding-top: 20px;
-  font-family: $font-secondary;
-  font-size: 14px;
-  color: $color-principal-text;
-  height: 45px;
-  padding-top: 35px;
-  padding-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  @media (min-width:1200px){
-    position: absolute;
-    right: 138px;
+  @media (min-width: 768px) {
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 30px;
   }
 
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 
-  & a {
-    text-decoration: none;
-    color: $color-principal-text;
-    text-transform: uppercase;
-    font-family: $font-secondary;
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: end;
+    }
+  }
+
+  &__copy {
+    color: $color-quart-text;
+  }
+
+  &__list {
+    margin-top: 20px;
+
+    @media (min-width: 768px) {
+      margin-top: 0;
+    }
+  
+    & a {
+      text-decoration: none;
+      color: $color-principal-text;
+      text-transform: uppercase;
+    }
+  }
+
+  &__list-item {
+    margin-top: 3px;
+
+    @media (min-width: 768px) {
+      margin-top: 10px;
+    }
+  }
+
+  &__logo {
+    text-align: center;
+    margin-top: 30px;
+
+    @media (min-width: 768px) {
+      position: relative;
+      top: -50px;
+      text-align: start;
+      margin-top: 0;
+    }
+
+    & img {
+      width: 115px;
+      height: 45px;
+    }
   }
 }
