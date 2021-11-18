@@ -4,20 +4,93 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="icon" href="./assets/images/favicon.png" />
   </head>
 
   <body>
     <div class="page">
-      <include src="./partials/header.html" title="Otra página del starter kit"></include>
+      <include
+        src="./partials/header.html"
+        title="Otra página del starter kit"
+      ></include>
       <main>
-        <p>
-          Esta es otra segunda página del Starter kit. Mira el fichero
-          <code class="code">./src/html/partials/main.html</code> para cómo hemos creado el enlace
-          que te ha traído hasta aquí.
-        </p>
+        <div class="contact_form">
+          <div class="formulario">
+            <h1>Formulario de contacto</h1>
+            <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+
+            <p class="aviso">
+              Todos los campos marcados con
+              <span class="obligatorio"> * </span> son obligatorios.
+            </p>
+
+            <form action="https://formspree.io/f/xdoyqbgl" method="post">
+              <fieldset>
+                <label for="nombre" class="colocar_nombre"
+                  >Nombre completo
+                  <span class="obligatorio">*</span>
+                </label>
+                <input
+                  type="text"
+                  name="introducir_nombre"
+                  id="nombre"
+                  required="obligatorio"
+                  placeholder="Escribe tu nombre"
+                />
+              </fieldset>
+
+              <fieldset>
+                <label for="email" class="colocar_email"
+                  >Email
+                  <span class="obligatorio">*</span>
+                </label>
+                <input
+                  type="email"
+                  name="introducir_email"
+                  id="email"
+                  required="obligatorio"
+                  placeholder="nombre.apellidos@mail.com"
+                />
+              </fieldset>
+
+              <fieldset>
+                <label for="telephone">Teléfono</label>
+                <input
+                  type="tel"
+                  name="telephone"
+                  id="telephone"
+                  placeholder="teléfono"
+                  required
+                />
+              </fieldset>
+
+              <fieldset>
+                <label for="mensaje" class="colocar_mensaje"
+                  >Mensaje
+                  <span class="obligatorio">*</span>
+                </label>
+                <textarea
+                  name="introducir_mensaje"
+                  class="texto_mensaje"
+                  id="mensaje"
+                  required="obligatorio"
+                  placeholder="¿Qué necesitas?"
+                ></textarea>
+              </fieldset>
+
+              <fieldset>
+                <button type="submit" name="enviar_formulario" id="enviar">
+                  <p>Enviar</p>
+                </button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
       </main>
       <include src="./partials/footer.html"></include>
     </div>

@@ -1,4 +1,4 @@
-main {
+.main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,6 +55,16 @@ main {
     font-family: $font-principal;
   }
 }
+
+
+@media (min-width:768px){
+  .s-w__article{
+  display: flex;
+  flex-direction: row;
+  } 
+
+}
+
 
 #square {
   width: 29.9px;

@@ -52,46 +52,12 @@
 
     &--links {
       margin: 20px;
+      color: $color-principal;
+
+      &:hover{
+        color: $color-quart-text;
+      }
     }
+
   }
-}
-
-.fa-twitter {
-  height: 30px;
-  background-color: var(--about-us-background);
-  color: var(--about-us-icons-networks);
-}
-
-.fa-twitter:hover {
-  color: var(--team-background);
-}
-
-.fa-envelope {
-  height: 30px;
-  background-color: var(--about-us-background);
-  color: var(--about-us-icons-networks);
-}
-
-.fa-envelope:hover {
-  color: var(--team-background);
-}
-
-.fa-linkedin-in {
-  height: 30px;
-  background-color: var(--about-us-background);
-  color: var(--about-us-icons-networks);
-}
-
-.fa-linkedin-in:hover {
-  color: var(--team-background);
-}
-
-.fa-github-alt {
-  height: 30px;
-  background-color: var(--about-us-background);
-  color: var(--about-us-icons-networks);
-}
-
-.fa-github-alt:hover {
-  color: var(--team-background);
 }
