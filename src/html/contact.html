@@ -1,71 +1,107 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Adalab Web Starter Kit</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/images/favicon.png" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Adalab Web Starter Kit</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./assets/css/main.css" />
-  <link rel="icon" href="./assets/images/favicon.png" />
-</head>
+  <body>
+    <include
+      src="./partials/header-contact.html"
+      title="Otra página del starter kit"
+    ></include>
+    <main class="contact_form">
+      <div class="hero">
+        <section class="slogan">
+        </section>
 
-<body>
-  <div class="page">
-    <include src="./partials/header.html" title="Otra página del starter kit"></include>
-    <main>
-      <div class="contact_form">
-        <div class="formulario">
-          <h1>Formulario de contacto</h1>
-          <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+        
 
-          <p class="aviso">
-            Todos los campos marcados con
-            <span class="obligatorio"> * </span> son obligatorios.
-          </p>
+    </div>
 
-          <form action="https://formspree.io/f/xdoyqbgl" method="post">
-            <fieldset>
-              <label for="nombre" class="colocar_nombre">Nombre completo
-                <span class="obligatorio">*</span>
-              </label>
-              <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
-                placeholder="Escribe tu nombre" />
-            </fieldset>
+      <div class="formulario">
+        <h1>Contacto</h1>
+        <h3>
+          Si en algún momento quiere ponerse en contacto con nosotras, rellene
+          el siguiente formulario y estaremos encantadas de responderle.
+        </h3>
 
-            <fieldset>
-              <label for="email" class="colocar_email">Email
-                <span class="obligatorio">*</span>
-              </label>
-              <input type="email" name="introducir_email" id="email" required="obligatorio"
-                placeholder="nombre.apellidos@mail.com" />
-            </fieldset>
+        <p class="aviso">
+          Todos los campos marcados con
+          <span class="obligatorio"> * </span> son obligatorios.
+        </p>
 
-            <fieldset>
-              <label for="telephone">Teléfono</label>
-              <input type="tel" name="telephone" id="telephone" placeholder="teléfono" required />
-            </fieldset>
+        <form action="https://formspree.io/f/xdoyqbgl" method="post">
+          <fieldset>
+            <label for="nombre" class="colocar_nombre"
+              >Nombre completo
+              <span class="obligatorio">*</span>
+            </label>
+            <input
+              type="text"
+              name="introducir_nombre"
+              id="nombre"
+              required="obligatorio"
+              placeholder="Escribe tu nombre"
+            />
+          </fieldset>
 
-            <fieldset>
-              <label for="mensaje" class="colocar_mensaje">Mensaje
-                <span class="obligatorio">*</span>
-              </label>
-              <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
-                placeholder="¿Qué necesitas?"></textarea>
-            </fieldset>
+          <fieldset>
+            <label for="email" class="colocar_email"
+              >Email
+              <span class="obligatorio">*</span>
+            </label>
+            <input
+              type="email"
+              name="introducir_email"
+              id="email"
+              required="obligatorio"
+              placeholder="nombre.apellidos@mail.com"
+            />
+          </fieldset>
 
-            <fieldset>
-              <button type="submit" name="enviar_formulario" id="enviar">
-                <p>Enviar</p>
-              </button>
-            </fieldset>
-          </form>
-        </div>
+          <fieldset>
+            <label for="telephone">Teléfono</label>
+            <input
+              type="tel"
+              name="telephone"
+              id="telephone"
+              placeholder="teléfono"
+              required
+            />
+          </fieldset>
+
+          <fieldset>
+            <label for="mensaje" class="colocar_mensaje"
+              >Mensaje
+              <span class="obligatorio">*</span>
+            </label>
+            <textarea
+              name="introducir_mensaje"
+              class="texto_mensaje"
+              id="mensaje"
+              required="obligatorio"
+              placeholder="¿Qué necesitas?"
+            ></textarea>
+          </fieldset>
+
+          <fieldset>
+            <button type="submit" name="enviar_formulario" id="enviar">
+              <p>Enviar</p>
+            </button>
+          </fieldset>
+        </form>
       </div>
     </main>
-    <include src="./partials/footer.html"></include>
-  </div>
-  <script src="./assets/js/main.js"></script>
-</body>
+    <include src="./partials/footer-contact.html"></include>
 
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>
