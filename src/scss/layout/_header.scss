@@ -10,6 +10,7 @@
   height: 60px;
   opacity: 0.95;
   margin-bottom: 20px;
+  z-index: 1;
 
   @media all and (min-width: 768px) {
     display: fixed;

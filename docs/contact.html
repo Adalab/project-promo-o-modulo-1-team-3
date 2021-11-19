@@ -12,7 +12,16 @@
 
 <body>
   <div class="page">
-    <include src="./partials/header.html" title="Otra página del starter kit"></include>
+    <header class="header">
+      <h1 class="team-name">DESCODIGADAS</h1>
+      <nav class="menu__nav">
+          <ul class="menu__nav--list">
+              <li><a class="menu__nav--list--item" href="#team-section">EQUIPO</a></li>
+              <li><a class="menu__nav--list--item" href="#about-us">QUIÉNES SOMOS</a> </li>
+              <li><a class="menu__nav--list--item" href="./contact.html">CONTACTO</a></li>
+          </ul>
+      </nav>
+    </header>
     <main>
       <div class="contact_form">
         <div class="formulario">
@@ -63,7 +72,33 @@
         </div>
       </div>
     </main>
-    <include src="./partials/footer.html"></include>
+    <footer class="footer">
+
+        <div class="footer__container">
+            <section class="footer__copy">
+                Descodigadas &copy; 2021
+            </section>
+
+            <nav>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#team-section">Equipo </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#about-us"> Quiénes Somos </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="./contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <section class="footer__logo">
+            <img class src="./assets/images/logo-adalab.png" alt="Logo Adalab">
+        </section>
+
+    </footer>
   </div>
   <script src="./assets/js/main.js"></script>
 </body>

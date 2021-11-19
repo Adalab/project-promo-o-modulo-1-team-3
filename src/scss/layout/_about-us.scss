@@ -5,8 +5,11 @@
   justify-content: center;
 
   @media (min-width: 768px) {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    flex-direction: row;
+    &.locator{
+      flex-direction: row-reverse;
+    }
+   
   }
 
   &__images {
@@ -39,6 +42,10 @@
     font-family: $font-principal;
     color: $color-secondary-text;
     margin: 20px;
+
+  }
+  @media (min-width:768px){
+    align-self: flex-end;
   }
 }
 
