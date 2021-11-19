@@ -23,6 +23,11 @@
     color: $color-secondary;
     margin-bottom: 15px;
     padding-top: 20px;
+
+    &.about-us {
+      position: relative;
+      padding-top: 40px;
+    }
   }
 
   &--text {
@@ -48,23 +53,36 @@
     font-family: $font-principal;
     color: $color-secondary;
     margin-bottom: 15px;
+
+    @media (min-width: 768px) {
+      grid-row: 1;
+    }
   }
 
   &--text {
     height: 192px;
     font-family: $font-principal;
+
+    @media (min-width: 768px) {
+      grid-row: 2;
+
+      &.weak {
+        padding-left: 25px;
+      }
+
+      &.str {
+        padding-right: 20px;
+      }
+    }
   }
 }
 
-
-@media (min-width:768px){
-  .s-w__article{
-  display: flex;
-  flex-direction: row;
-  } 
-
+@media (min-width: 768px) {
+  .s-w__article {
+    display: grid;
+    grid-template-columns: 50%;
+  }
 }
-
 
 #square {
   width: 29.9px;
