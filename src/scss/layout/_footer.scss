@@ -4,6 +4,7 @@
   font-size: 14px;
   padding-top: 30px;
   padding-bottom: 45px;
+  border-top: 1px solid #b8b8b9;
 
   @media (min-width: 768px) {
     padding-left: 45px;
@@ -35,7 +36,7 @@
     @media (min-width: 768px) {
       margin-top: 0;
     }
-  
+
     & a {
       text-decoration: none;
       color: $color-principal-text;
@@ -66,5 +67,10 @@
       width: 115px;
       height: 45px;
     }
+  }
+
+  @media (min-width: 1200px) {
+    padding-left: 138px;
+    padding-right: 138px;
   }
 }

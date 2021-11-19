@@ -19,12 +19,21 @@
     align-items: center;
     margin: 0;
     background-color: $color-secondary;
+
+    .team-name {
+      position: absolute;
+      left: 45px;
+      top: 10px;
+    }
   }
-  
+}
 
-
-
-
+.header {
+  @media all and (min-width: 1200px) {
+    .team-name {
+      left: 138px;
+    }
+  }
 }
 
 .team-name {
@@ -59,24 +68,24 @@
     margin-top: 15px;
 
     @media all and (min-width: 768px) {
-
-    justify-content: space-between;
-    align-items: center;
-    margin: 0px;
-    position: relative;
-    margin-right: 45px;
-    width: 294px;
-    padding: 0px;
-    height: 60px;
-    background-color: $color-secondary;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0px;
+      position: relative;
+      margin-right: 45px;
+      width: 294px;
+      padding: 0px;
+      height: 60px;
+      background-color: $color-secondary;
     }
-
-
 
     &--item {
       color: $color-tertiary-text;
       text-decoration: none;
     }
+
+    @media all and (min-width: 1200px) {
+      margin-right: 138px;
+    }
   }
 }
-
