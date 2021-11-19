@@ -1,68 +1,97 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Adalab Web Starter Kit</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/images/favicon.png" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Adalab Web Starter Kit</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./assets/css/main.css" />
-  <link rel="icon" href="./assets/images/favicon.png" />
-</head>
-
-<body>
-  <div class="page">
+  <body>
     <header class="header">
-      <h1 class="team-name">DESCODIGADAS</h1>
-      <nav class="menu__nav">
-          <ul class="menu__nav--list">
-              <li><a class="menu__nav--list--item" href="#team-section">EQUIPO</a></li>
-              <li><a class="menu__nav--list--item" href="#about-us">QUIÉNES SOMOS</a> </li>
-              <li><a class="menu__nav--list--item" href="./contact.html">CONTACTO</a></li>
-          </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="contact_form">
-        <div class="formulario">
-          <h1>Formulario de contacto</h1>
-          <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+        <h1 class="team-name">DESCODIGADAS</h1>
+        <nav class="menu__nav">
+            <ul class="menu__nav--list">
+                <li><a class="menu__nav--list--item" href="..#team-section">EQUIPO</a></li>
+                <li><a class="menu__nav--list--item" href="..#team-section">QUIÉNES SOMOS</a> </li>
+                <li><a class="menu__nav--list--item" href="./contact.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+      </header>
+    <main class="contact_form">
+    
+        <section class="slogan__contact">
+        </section>
 
-          <p class="aviso">
-            Todos los campos marcados con
-            <span class="obligatorio"> * </span> son obligatorios.
-          </p>
 
+    <div class="formulario">
+        <h1 class="form_title">Contacto</h1>
+        <h3 class="form_text">
+          Si en algún momento quiere ponerse en contacto con nosotras, rellene
+          el siguiente formulario y estaremos encantadas de responderle.
+        </h3>
+
+        <p class="aviso">
+          Todos los campos marcados con
+          <span class="obligatorio"> * </span> son obligatorios.
+        </p>
+
+        <div class="form_form">
           <form action="https://formspree.io/f/xdoyqbgl" method="post">
             <fieldset>
-              <label for="nombre" class="colocar_nombre">Nombre completo
+              <label for="nombre" class="colocar_nombre"
+                >Nombre completo
                 <span class="obligatorio">*</span>
               </label>
-              <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
-                placeholder="Escribe tu nombre" />
+              <input
+                type="text"
+                name="introducir_nombre"
+                id="nombre"
+                required="obligatorio"
+                placeholder="Escribe tu nombre"
+              />
             </fieldset>
-
             <fieldset>
-              <label for="email" class="colocar_email">Email
+              <label for="email" class="colocar_email"
+                >Email
                 <span class="obligatorio">*</span>
               </label>
-              <input type="email" name="introducir_email" id="email" required="obligatorio"
-                placeholder="nombre.apellidos@mail.com" />
+              <input
+                type="email"
+                name="introducir_email"
+                id="email"
+                required="obligatorio"
+                placeholder="nombre.apellidos@mail.com"
+              />
             </fieldset>
-
             <fieldset>
               <label for="telephone">Teléfono</label>
-              <input type="tel" name="telephone" id="telephone" placeholder="teléfono" required />
+              <input
+                type="tel"
+                name="telephone"
+                id="telephone"
+                placeholder="teléfono"
+                required
+              />
             </fieldset>
-
             <fieldset>
-              <label for="mensaje" class="colocar_mensaje">Mensaje
+              <label for="mensaje" class="colocar_mensaje"
+                >Mensaje
                 <span class="obligatorio">*</span>
               </label>
-              <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
-                placeholder="¿Qué necesitas?"></textarea>
+              <textarea
+                name="introducir_mensaje"
+                class="texto_mensaje"
+                id="mensaje"
+                required="obligatorio"
+                placeholder="¿Qué necesitas?"
+              ></textarea>
             </fieldset>
-
             <fieldset>
               <button type="submit" name="enviar_formulario" id="enviar">
                 <p>Enviar</p>
@@ -82,10 +111,10 @@
             <nav>
                 <ul class="footer__list">
                     <li class="footer__list-item">
-                        <a href="#team-section">Equipo </a>
+                        <a href="..#team-section">Equipo </a>
                     </li>
                     <li class="footer__list-item">
-                        <a href="#about-us"> Quiénes Somos </a>
+                        <a href="..#about-us"> Quiénes Somos </a>
                     </li>
                     <li class="footer__list-item">
                         <a href="./contact.html">Contacto</a>
@@ -99,8 +128,7 @@
         </section>
 
     </footer>
-  </div>
-  <script src="./assets/js/main.js"></script>
-</body>
 
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>
