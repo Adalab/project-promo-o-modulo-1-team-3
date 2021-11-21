@@ -10,6 +10,7 @@
   height: 60px;
   opacity: 0.95;
   margin-bottom: 20px;
+  z-index: 1;
 
   @media all and (min-width: 768px) {
     display: fixed;
@@ -19,11 +20,6 @@
     margin: 0;
     background-color: $color-secondary;
   }
-  
-
-
-
-
 }
 
 .team-name {
@@ -58,19 +54,16 @@
     margin-top: 15px;
 
     @media all and (min-width: 768px) {
-
-    justify-content: space-between;
-    align-items: center;
-    margin: 0px;
-    position: relative;
-    margin-right: 45px;
-    width: 294px;
-    padding: 0px;
-    height: 60px;
-    background-color: $color-secondary;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0px;
+      position: relative;
+      margin-right: 45px;
+      width: 294px;
+      padding: 0px;
+      height: 60px;
+      background-color: $color-secondary;
     }
-
-
 
     &--item {
       color: $color-tertiary-text;
@@ -78,4 +71,3 @@
     }
   }
 }
-
