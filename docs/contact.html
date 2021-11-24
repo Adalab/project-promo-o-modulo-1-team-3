@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Adalab Web Starter Kit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" >
     <link
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
@@ -29,17 +34,17 @@
         </section>
 
 
-    <div class="formulario">
+    <div class="form">
         <h1 class="form_title">Contacto</h1>
         <h3 class="form_text">
           Si en algún momento quiere ponerse en contacto con nosotras, rellene
           el siguiente formulario y estaremos encantadas de responderle.
         </h3>
 
-        <p class="aviso">
+        <small class="form_aviso">
           Todos los campos marcados con
           <span class="obligatorio"> * </span> son obligatorios.
-        </p>
+        </small>
 
         <div class="form_form">
           <form action="https://formspree.io/f/xdoyqbgl" method="post">
@@ -93,8 +98,9 @@
               ></textarea>
             </fieldset>
             <fieldset>
-              <button type="submit" name="enviar_formulario" id="enviar">
-                <p>Enviar</p>
+              <button class="
+              button" type="submit" name="enviar_formulario" id="enviar">
+                Enviar
               </button>
             </fieldset>
           </form>
