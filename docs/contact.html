@@ -4,11 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Adalab Web Starter Kit</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">   
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" >
     <link
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
@@ -18,27 +13,33 @@
   </head>
 
   <body>
-    <include
-      src="./partials/header-contact.html"
-      title="Otra página del starter kit"
-    ></include>
+    <header class="header">
+        <h1 class="team-name">DESCODIGADAS</h1>
+        <nav class="menu__nav">
+            <ul class="menu__nav--list">
+                <li><a class="menu__nav--list--item" href="..#team-section">EQUIPO</a></li>
+                <li><a class="menu__nav--list--item" href="..#team-section">QUIÉNES SOMOS</a> </li>
+                <li><a class="menu__nav--list--item" href="./contact.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+      </header>
     <main class="contact_form">
     
         <section class="slogan__contact">
         </section>
 
 
-    <div class="form">
+    <div class="formulario">
         <h1 class="form_title">Contacto</h1>
         <h3 class="form_text">
           Si en algún momento quiere ponerse en contacto con nosotras, rellene
           el siguiente formulario y estaremos encantadas de responderle.
         </h3>
 
-        <small class="form_aviso">
+        <p class="aviso">
           Todos los campos marcados con
           <span class="obligatorio"> * </span> son obligatorios.
-        </small>
+        </p>
 
         <div class="form_form">
           <form action="https://formspree.io/f/xdoyqbgl" method="post">
@@ -92,16 +93,41 @@
               ></textarea>
             </fieldset>
             <fieldset>
-              <button class="
-              button" type="submit" name="enviar_formulario" id="enviar">
-                Enviar
+              <button type="submit" name="enviar_formulario" id="enviar">
+                <p>Enviar</p>
               </button>
             </fieldset>
           </form>
         </div>
       </div>
     </main>
-    <include src="./partials/footer-contact.html"></include>
+    <footer class="footer">
+
+        <div class="footer__container">
+            <section class="footer__copy">
+                Descodigadas &copy; 2021
+            </section>
+
+            <nav>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="..#team-section">Equipo </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="..#about-us"> Quiénes Somos </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="./contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <section class="footer__logo">
+            <img class src="./assets/images/logo-adalab.png" alt="Logo Adalab">
+        </section>
+
+    </footer>
 
     <script src="./assets/js/main.js"></script>
   </body>

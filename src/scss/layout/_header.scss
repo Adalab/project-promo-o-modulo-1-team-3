@@ -19,6 +19,20 @@
     align-items: center;
     margin: 0;
     background-color: $color-secondary;
+
+    .team-name {
+      position: absolute;
+      left: 45px;
+      top: 10px;
+    }
+  }
+}
+
+.header {
+  @media all and (min-width: 1200px) {
+    .team-name {
+      left: 138px;
+    }
   }
 }
 
@@ -68,6 +82,10 @@
     &--item {
       color: $color-tertiary-text;
       text-decoration: none;
+    }
+
+    @media all and (min-width: 1200px) {
+      margin-right: 138px;
     }
   }
 }

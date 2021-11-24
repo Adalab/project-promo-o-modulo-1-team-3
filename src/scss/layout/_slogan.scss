@@ -4,7 +4,8 @@
   background-image: url(https://www.enter.co/wp-content/uploads/2021/03/5161938-768x432.jpg);
   background-repeat: no-repeat;
   background-size: contain;
-  position: relative;
+  display: flex;
+  justify-content: center;
   top: 60px;
   z-index: -1;
   width: 100%;
