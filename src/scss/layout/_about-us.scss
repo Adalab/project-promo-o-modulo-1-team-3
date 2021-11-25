@@ -14,9 +14,11 @@
   &__images {
     border: rgba(117, 112, 112, 0.178) 5px solid;
     border-radius: 5%;
-    margin-top: 30px;
     height: 180px;
     width: 180px;
+
+    transform: translateY(-30px);
+  
   }
 
   &__name {
@@ -26,34 +28,54 @@
     align-items: center;
     text-align: center;
     padding: 30px 25px;
-    margin-left: 20px;
-    margin-right: 20px;
     background-color: white;
-    color: $color-principal;
+    color: black;
+    font-weight: normal;
     line-height: 24px;
     font-family: $font-principal;
     font-size: 20px;
+    
 
+  
     @media (min-width: 768px) {
-      text-align: start;
       justify-content: start;
+      padding-bottom: 5px;
+   
+      
     }
   }
 
+  .locator &__name {
+  
+      @media (min-width: 768px) {
+        justify-content: end;
+      
+      }
+   }
+  
+
+
   &__aboutus {
     text-align: center;
+    align-items: center;
     font-family: $font-principal;
     color: $color-secondary-text;
     margin: 20px;
 
     @media (min-width: 768px) {
       text-align: start;
-      &.locator {
-      }
+    }
+  }
+
+  .locator &__aboutus {
+    @media (min-width: 768px) {
+      text-align: end;
     }
   }
 }
+
 /* REDES SOCIALES */
+
 
 .social {
   list-style-type: none;
