@@ -58,17 +58,20 @@
   &__logo {
     text-align: center;
     margin-top: 30px;
+    width: 50%;
+    
+    .img{
+    width: 115px;
+    height: 45px;
+
+    }
+    
 
     @media (min-width: 768px) {
       position: relative;
       top: -50px;
       text-align: start;
       margin-top: 0;
-    }
-
-    & img {
-      width: 115px;
-      height: 45px;
     }
   }
 
