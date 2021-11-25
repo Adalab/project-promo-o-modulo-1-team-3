@@ -84,6 +84,10 @@
     &--item {
       color: $color-tertiary-text;
       text-decoration: none;
+
+      &:hover {
+        color: $color-secondary;
+      }
     }
 
     @media all and (min-width: 1200px) {

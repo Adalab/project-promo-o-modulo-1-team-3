@@ -41,6 +41,9 @@
       text-decoration: none;
       color: $color-principal-text;
       text-transform: uppercase;
+      &:hover {
+        color: $color-principal;
+      }
     }
   }
 

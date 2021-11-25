@@ -7,6 +7,10 @@
   height: 300px;
   width: 100%;
 
+  @media (min-width: 768px) {
+    height: 350px;
+  }
+
   @media (min-width: 1200px) {
     height: 400px;
   }
@@ -14,7 +18,7 @@
 
 .form {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr fr 1fr 1fr;
   grid-template-columns: 1fr;
   height: 100vh;
   width: 100%;
@@ -23,10 +27,11 @@
   text-align: center;
 
   @media (min-width: 768px) {
-    grid-template-rows: 130px 200px 100px 350px;
+    grid-template-rows: 10% 10% 5% 65%;
   }
 
   @media (min-width: 1200px) {
+    grid-template-rows: 10% 5% 10% 65%;
   }
 
   &_title {
@@ -37,6 +42,12 @@
     grid-row: 1;
     color: $color-principal;
     font-weight: normal;
+    margin-top: 30px;
+    line-height: 45px;
+
+    @media (min-width: 1200px) {
+      margin: 45px;
+    }
   }
 
   &_text {
@@ -46,24 +57,25 @@
     color: $color-quart-text;
     width: 400px;
     padding: 15px 15px;
-
     font-weight: normal;
+    @media (min-width: 768px) {
+      width: 500px;
+    }
+    @media (min-width: 1200px) {
+      width: 600px;
+    }
   }
 
   &_aviso {
     font-family: $font-secondary;
     color: $color-quart-text;
-
     width: 400px;
   }
 
   &_form {
     grid-row: 4;
+    font-family: $font-secondary;
   }
-}
-
-form {
-  font-family: $font-secondary;
 }
 
 fieldset {
@@ -119,6 +131,13 @@ textarea {
     color: white;
     background-color: $color-principal;
     border: none;
+
+    &:hover {
+      color: $color-principal;
+      background-color: 0.5s linear;
+      background-color: $color-secondary;
+      border: 1px solid $color-principal;
+    }
 
     @media (min-width: 768px) {
       width: 210px;
