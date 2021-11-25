@@ -2,9 +2,14 @@
   background-image: url(https://images.pexels.com/photos/7821577/pexels-photo-7821577.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   z-index: -1;
   height: 300px;
   width: 100%;
+
+  @media (min-width: 1200px) {
+    height: 400px;
+  }
 }
 
 .form {
@@ -15,6 +20,14 @@
   width: 100%;
   align-items: center;
   justify-items: center;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    grid-template-rows: 130px 200px 100px 350px;
+  }
+
+  @media (min-width: 1200px) {
+  }
 
   &_title {
     font-family: $font-principal;
@@ -23,6 +36,7 @@
     grid-column: 1;
     grid-row: 1;
     color: $color-principal;
+    font-weight: normal;
   }
 
   &_text {
@@ -31,10 +45,15 @@
     font-size: 16px;
     color: $color-quart-text;
     width: 400px;
+    padding: 15px 15px;
+
+    font-weight: normal;
   }
 
   &_aviso {
     font-family: $font-secondary;
+    color: $color-quart-text;
+
     width: 400px;
   }
 
@@ -53,12 +72,24 @@ fieldset {
   border: none;
   padding-bottom: 20px;
   line-height: 40px;
+  text-align: start;
+  color: $color-principal-text;
+  font-size: 14px;
 }
 
 input {
   border: 1px solid $color-quart-text;
   height: 45px;
   padding-left: 10px;
+  width: 290px;
+
+  @media (min-width: 768px) {
+    width: 350px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 600px;
+  }
 }
 
 textarea {
@@ -72,19 +103,34 @@ textarea {
 .obligatorio {
   color: $color-principal;
 }
-.button {
-  width: 100%;
-  height: 45px;
-  text-transform: uppercase;
-  font-family: $font-principal;
-  font-size: 16px;
-  color: white;
-  background-color: $color-principal;
-  border: none;
+
+.btn {
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__send {
+    width: 100%;
+    height: 45px;
+    text-transform: uppercase;
+    font-family: $font-principal;
+    font-size: 16px;
+    color: white;
+    background-color: $color-principal;
+    border: none;
+
+    @media (min-width: 768px) {
+      width: 210px;
+    }
+    @media (min-width: 1200px) {
+      width: 280px;
+    }
+  }
 }
 
-@mixin pepino {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+// @mixin pepino {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
