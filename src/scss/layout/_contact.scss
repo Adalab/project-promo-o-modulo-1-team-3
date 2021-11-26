@@ -1,3 +1,9 @@
+.contact_form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .slogan__contact {
   background-image: url(https://images.pexels.com/photos/7821577/pexels-photo-7821577.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   background-repeat: no-repeat;
@@ -6,6 +12,8 @@
   z-index: -1;
   height: 300px;
   width: 100%;
+  position: relative;
+  left: 25px;
 
   @media (min-width: 768px) {
     height: 350px;
