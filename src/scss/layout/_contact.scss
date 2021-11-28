@@ -1,7 +1,7 @@
 .contact_form{
   display: flex;
   flex-direction: column;
-  width: 100%;
+  
 }
 
 .slogan__contact {
@@ -11,9 +11,9 @@
   background-position: center;
   z-index: -1;
   height: 300px;
-  width: 100%;
+  
   position: relative;
-  left: 25px;
+  
 
   @media (min-width: 768px) {
     height: 350px;
@@ -28,8 +28,8 @@
   display: grid;
   grid-template-rows: 1fr fr 1fr 1fr;
   grid-template-columns: 1fr;
-  height: 100vh;
-  width: 100%;
+
+  
   align-items: center;
   justify-items: center;
   text-align: center;
@@ -63,7 +63,7 @@
     font-family: $font-secondary;
     font-size: 16px;
     color: $color-quart-text;
-    width: 400px;
+    
     padding: 15px 15px;
     font-weight: normal;
     @media (min-width: 768px) {
@@ -77,7 +77,8 @@
   &_aviso {
     font-family: $font-secondary;
     color: $color-quart-text;
-    width: 400px;
+    padding-bottom: 25px;
+    
   }
 
   &_form {
@@ -101,7 +102,7 @@ input {
   border: 1px solid $color-quart-text;
   height: 45px;
   padding-left: 10px;
-  width: 290px;
+ 
 
   @media (min-width: 768px) {
     width: 350px;
